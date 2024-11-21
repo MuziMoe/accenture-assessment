@@ -1,0 +1,59 @@
+.hero-section1 {
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+  }
+
+  .hero-section1 h3{
+    font-weight: 10;
+    margin-left: 60px;
+  }
+  
+  .section-title {
+    font-size: 132m;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+  }
+  
+  .section-description {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-weight: 600;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .service {
+    width: 22%;
+    text-align: center;
+  }
+  
+  .service img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .service p {
+    font-size: 1rem;
+  }
+  
+  .hero-section1 img {
+    display: flex;
+    justify-content: left;
+
+  }

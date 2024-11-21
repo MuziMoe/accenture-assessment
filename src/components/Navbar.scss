@@ -1,0 +1,98 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(80, 2, 136, 0.864); // Purple background
+  padding: 10px 20px;
+  color: white;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      //width: 100px;
+      //height: 40px;
+      margin-left: 40px;
+    }
+
+    span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+    li a {
+      text-decoration: none;
+      color: white;
+      font-size: 0.8rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #f7f7f7;
+      }
+    }
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: rgba(80, 2, 136, 0.864);
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    height:30px;
+    width: 100px;
+
+    &:hover {
+      background-color: rgba(80, 2, 136, 0.864);
+      color: white;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; // Hide navigation links on smaller screens
+  }
+
+  .hamburger {
+    display: flex; // Show hamburger menu on smaller screens
+  }
+}

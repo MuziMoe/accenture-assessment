@@ -1,0 +1,72 @@
+.brands {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .brands h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+    color: #333;
+  }
+
+  .brands h3{
+    font-size: 1rem;
+    font-weight: 10;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: left;
+    color: #333;
+  }
+  
+  .brand-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* Grid layout and forcing 5 per grid */
+    gap: 20px;
+    justify-items: center; /* Center items within the grid */
+  }
+  
+  .brand-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensure card expands to fill grid space */
+  }
+  
+  .brand-logo {
+    max-width: 100%; /* Make sure logo doesn't overflow */
+    max-height: 40px; /* Control logo size */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between the logo and brand name */
+  }
+  
+  .brand-card p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Hover effects */
+  .brand-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .brand-container {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* More items in a row on smaller screens */
+    }
+  
+    .brand-logo {
+      max-height: 50px; /* Slightly smaller logos on smaller screens */
+    }
+  }
+  

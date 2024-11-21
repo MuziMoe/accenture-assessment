@@ -1,0 +1,42 @@
+@import './variables';
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.brands-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.brand-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.brand-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
