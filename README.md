@@ -4,4 +4,6 @@ Then switch using 'git checkout master'
 
 From there you can open the folder in VS Code.
 Once open, run 'npm install' in the terminal to install dependencies
-Then run 'npm start'
+Install axios using 'npm install axios'
+Install sass using 'npm install sass'
+Then launch the server using 'npm start'
